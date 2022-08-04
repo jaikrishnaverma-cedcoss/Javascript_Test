@@ -51,14 +51,17 @@ function tracking() {
         if (camt > 0)
             income += camt;
         if (camt < 0)
-            expence += camt;
+            expence -= camt;
     }
     sum = income - expence;
+    // alert(sum);
+    let temp=expence;
     let sign = "";
-    document.getElementById('money-minus').innerText = "-$" + Math.abs(expence);
+    document.getElementById('money-minus').innerText = "-$" + Math.abs(temp);
 
     document.getElementById('money-plus').innerText = "+$" + income;
     (sum < 0) ? sign = "-$" : sign = "$";
+  
     document.getElementById('balance').innerText = sign + Math.abs(sum);
     console.log();
 }
