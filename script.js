@@ -7,14 +7,13 @@ function add() {
     let txt = document.getElementById("text").value;
     let amt = document.getElementById("amount").value;
     amt = parseInt(amt);
-
-    if (amt > 0) {
-        income += amt;
+if (amt > 0) {
+        income = amt;
         classN = "plus";
 
     }
     else if (amt < 0) {
-        expense -= amt;
+        expense = amt;
         classN = "minus";
     }
     else {
