@@ -54,7 +54,7 @@ function tracking() {
         if (camt < 0)
             expence += camt;
     }
-    sum = income - expense;
+    sum = income - expence;
     let sign = "";
     document.getElementById('money-minus').innerText = "-$" + Math.abs(expence);
 
